@@ -1,23 +1,23 @@
-// Поиск объявлений на olx.pl через внутренний JSON API.
-// Параметры читаются из window.__P (задать перед запуском:
+// Search olx.pl listings through the internal JSON API.
+// Parameters are read from window.__P (set them before running:
 //   playwright-cli -s=olx eval "window.__P={query:'rower',limit:50}")
 //
-// Поля __P:
-//   query      строка, польский термин (обязательно)
-//   cityId     число, из olx-city.js
-//   distance   число, км вокруг города (работает только вместе с cityId)
-//   priceFrom  число, zł
-//   priceTo    число, zł
+// __P fields:
+//   query      string, Polish term (required)
+//   cityId     number, from olx-city.js
+//   distance   number, km around the city (only works together with cityId)
+//   priceFrom  number, zł
+//   priceTo    number, zł
 //   state      'used' | 'new' | 'damaged'
 //   ownerType  'private' | 'business'
-//   courier    true — только с доставкой OLX
-//   categoryId число, из docs/olx-pl-categories.json
-//   sortBy     'created_at:desc' (по умолчанию) | 'filter_float_price:asc' | 'filter_float_price:desc'
-//   pages      сколько страниц тянуть, по умолчанию 1 (limit жёстко 50, потолок offset — 1000)
+//   courier    true — OLX delivery only
+//   categoryId number, from docs/olx-pl-categories.json
+//   sortBy     'created_at:desc' (default) | 'filter_float_price:asc' | 'filter_float_price:desc'
+//   pages      how many pages to pull, 1 by default (limit is hard-capped at 50, offset ceiling is 1000)
 async page => {
   return await page.evaluate(async () => {
     const P = window.__P || {};
-    if (!P.query) throw new Error('window.__P.query не задан');
+    if (!P.query) throw new Error('window.__P.query is not set');
 
     const buildQS = (offset) => {
       const qs = new URLSearchParams();
@@ -60,7 +60,7 @@ async page => {
         courier: o.delivery?.rock?.active ?? false,
         photos: o.photos?.length ?? 0,
         categoryId: o.category?.id ?? null,
-        // промо соблюдают фильтры, но пришпилены наверх и ломают sort_by
+        // promoted listings respect the filters, but are pinned to the top and break sort_by
         promoted: !!(o.promotion && (o.promotion.top_ad || o.promotion.highlighted || o.promotion.urgent)),
       };
     };
@@ -74,9 +74,9 @@ async page => {
       const offset = i * 50;
       if (offset > 1000) { capped = true; break; }
       const res = await fetch('https://www.olx.pl/api/v1/offers/?' + buildQS(offset));
-      if (!res.ok) throw new Error(`offers ${res.status} на offset=${offset}`);
+      if (!res.ok) throw new Error(`offers ${res.status} at offset=${offset}`);
       const json = await res.json();
-      // ответ возвращает БОЛЬШЕ, чем limit (подмешаны промо) — режем дубли по id
+      // the response returns MORE than limit (promoted listings mixed in) — cut duplicates by id
       for (const o of json.data) {
         if (seen.has(o.id)) continue;
         seen.add(o.id);

@@ -1,8 +1,8 @@
-// Детали одного объявления. window.__P.id — числовой id (поле id из выдачи).
+// Details of a single listing. window.__P.id is the numeric id (the id field from the results).
 async page => {
   return await page.evaluate(async () => {
     const id = (window.__P || {}).id;
-    if (!id) throw new Error('window.__P.id не задан');
+    if (!id) throw new Error('window.__P.id is not set');
     const res = await fetch(`https://www.olx.pl/api/v1/offers/${id}/`);
     if (!res.ok) throw new Error(`offers/${id} ${res.status}`);
     const o = (await res.json()).data;
@@ -21,7 +21,7 @@ async page => {
       params: o.params?.map((p) => ({ key: p.key, name: p.name, value: p.value?.label ?? p.value })),
       location: o.location,
       map: o.map,
-      // seller_type у частников приходит null — авторитетен флаг business
+      // seller_type comes back null for private sellers — the business flag is authoritative
       seller: o.user && {
         id: o.user.id,
         name: o.user.name,
@@ -29,7 +29,7 @@ async page => {
         since: o.user.created,
         lastSeen: o.user.last_seen,
       },
-      hasPhone: o.contact?.phone ?? null, // только факт наличия; сам номер требует авторизации
+      hasPhone: o.contact?.phone ?? null, // presence only; the number itself requires authentication
       business: o.business,
       contact: o.contact,
       delivery: o.delivery,

@@ -1,10 +1,10 @@
-// Сколько всего совпадений — БЕЗ потолка в 1000, в отличие от самой выдачи.
-// Принимает те же window.__P, что и olx-search.js. Запускать ДО поиска,
-// чтобы решить, не слишком ли широкий запрос.
+// How many matches there are in total — WITHOUT the ceiling of 1000 that the results themselves have.
+// Takes the same window.__P as olx-search.js. Run it BEFORE the search,
+// to decide whether the query is too broad.
 async page => {
   return await page.evaluate(async () => {
     const P = window.__P || {};
-    if (!P.query) throw new Error('window.__P.query не задан');
+    if (!P.query) throw new Error('window.__P.query is not set');
     const qs = new URLSearchParams();
     qs.set('query', P.query);
     if (P.cityId) qs.set('city_id', String(P.cityId));

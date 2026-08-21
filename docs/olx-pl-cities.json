@@ -1,6 +1,6 @@
 {
   "source": "https://www.olx.pl/api/v1/geo-encoder/location-autocomplete/ (docs/snippets/olx-city.js)",
-  "note": "Кэш резолвов «название → cityId». Первым делом смотреть сюда, вызывать olx-city.js только на промахе, попадание дописывать через scripts/olx-cache.py city-add. Проверено: с диакритикой (\"Kraków\") точный город идёт первым, без неё (\"krakow\") — четвёртым, после деревень Krakowiany.",
+  "note": "Cache of \"name -> cityId\" resolves. Look here first, call olx-city.js only on a miss, write the hit back with scripts/olx-cache.py city-add. Verified: with diacritics (\"Kraków\") the exact city comes first, without them (\"krakow\") it comes fourth, after the villages of Krakowiany.",
   "harvested": "2026-08-21",
   "cities": [
     {

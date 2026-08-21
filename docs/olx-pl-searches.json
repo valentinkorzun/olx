@@ -1,5 +1,5 @@
 {
-  "note": "История поисков пользователя: params — ровно то, что уходит в window.__P, поэтому запрос повторяется копипастой. Пишется через scripts/olx-cache.py log, новые сверху.",
+  "note": "The user's search history: params is exactly what goes into window.__P, so a query is repeated by copy-paste. Written through scripts/olx-cache.py log, newest first.",
   "keep": 100,
   "searches": [
     {
@@ -13,7 +13,7 @@
         "pages": 4
       },
       "total": 160,
-      "note": "PS5 Slim по всей Польше, 1200-2600 zł, категория Gry i Konsole"
+      "note": "PS5 Slim across all of Poland, 1200-2600 zl, category Gry i Konsole"
     },
     {
       "date": "2026-08-21",
@@ -24,7 +24,7 @@
         "pages": 3
       },
       "total": 16,
-      "note": "PS5 Slim, Szczecin +15 км — 7 реальных консолей, минимум 1990 zł"
+      "note": "PS5 Slim, Szczecin +15 km — 7 real consoles, minimum 1990 zl"
     }
   ]
 }

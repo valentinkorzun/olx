@@ -3,73 +3,74 @@ name: olx-search
 description: Use when the user asks to find, search, price-check or browse listings on OLX Poland (olx.pl) — used goods, bikes, phones, furniture, cars, offers in Polish cities like Warszawa or Kraków.
 ---
 
-# Поиск по OLX Poland
+# Searching OLX Poland
 
-Данные берутся из внутреннего JSON API `olx.pl` **из живой браузерной сессии**: `curl` к тому же URL
-получает 403 от CloudFront. Реализация — `docs/snippets/*.js`, полная спека с доказательствами —
-`docs/olx-pl-search.md`, категории — `docs/olx-pl-categories.json`, города и история запросов —
-`docs/olx-pl-cities.json` / `docs/olx-pl-searches.json` через `scripts/olx-cache.py`.
-Команды запускать из корня проекта.
+Data comes from the internal `olx.pl` JSON API **from a live browser session**: `curl` against the same URL gets a
+403 from CloudFront. Implementation is in `docs/snippets/*.js`, the full spec with evidence in
+`docs/olx-pl-search.md`, categories in `docs/olx-pl-categories.json`, cities and query history in
+`docs/olx-pl-cities.json` / `docs/olx-pl-searches.json` via `scripts/olx-cache.py`.
+Run all commands from the project root.
 
-## Из чего состоит ответ пользователю
+## What the answer to the user consists of
 
-1. Названный польский термин: «ищу по `rower` (велосипед)».
-2. Число совпадений из счётчика.
-3. Таблица топ-N: название, цена (+«торг»), город/район, дата создания, дата поднятия, состояние, продавец, ссылка.
-4. Перечисленные применённые фильтры.
+1. The Polish term you used, named out loud: "searching for `rower` (bicycle)".
+2. The number of matches from the counter.
+3. A top-N table: title, price (+"negotiable"), city/district, creation date, bump date, condition, seller, link.
+4. The applied filters, listed.
 
-Сырой JSON — промежуточный артефакт, не ответ.
+Raw JSON is an intermediate artifact, not an answer.
 
-## Порядок
+## Order
 
 ```bash
-scripts/olx-cache.py history --query rower       # повторяет ли пользователь прошлый поиск?
-scripts/olx-cache.py city krakow                 # → cityId из кэша; exit 3 = промах, идём в API
+scripts/olx-cache.py history --query rower       # is the user repeating an earlier search?
+scripts/olx-cache.py city krakow                 # → cityId from the cache; exit 3 = miss, go to the API
 
-playwright-cli -s=olx open https://www.olx.pl --persistent          # один раз на сессию
+playwright-cli -s=olx open https://www.olx.pl --persistent          # once per session
 
-# только на промахе кэша:
+# only on a cache miss:
 playwright-cli -s=olx eval "window.__P={city:'krakow'}"
 playwright-cli -s=olx --raw run-code --filename=docs/snippets/olx-city.js   # → cityId
 scripts/olx-cache.py city-add --name Kraków --id 8959 --region Małopolskie --region-id 4 --alias krakow
 
 playwright-cli -s=olx eval "window.__P={query:'rower',cityId:8959,priceFrom:200,priceTo:500,state:'used'}"
-playwright-cli -s=olx --raw run-code --filename=docs/snippets/olx-count.js  # → сколько всего
-playwright-cli -s=olx --raw run-code --filename=docs/snippets/olx-search.js # → объявления
+playwright-cli -s=olx --raw run-code --filename=docs/snippets/olx-count.js  # → how many in total
+playwright-cli -s=olx --raw run-code --filename=docs/snippets/olx-search.js # → listings
 
-# после ответа пользователю — зафиксировать запрос:
+# after answering the user — record the query:
 scripts/olx-cache.py log --params '{"query":"rower","cityId":8959,"priceFrom":200,"priceTo":500,"state":"used"}' \
-  --total 812 --note "велосипед Краков до 500 zł"
+  --total 812 --note "bicycle, Kraków, up to 500 zł"
 ```
 
-`olx-offer.js` с `window.__P={id:...}` — детали одного объявления. `history` печатает готовую строку
-`eval` — прошлый поиск повторяется копипастой, без повторного резолва города. Файлы сниппетов не редактировать,
-параметры передавать только через `window.__P`.
+`olx-offer.js` with `window.__P={id:...}` gives the details of a single listing. `history` prints a ready-to-run
+`eval` line — a past search is repeated by copy-paste, with no second city resolve. Never edit the snippet files;
+pass parameters only through `window.__P`.
 
-## Фильтры
+## Filters
 
 `priceFrom` `priceTo` `cityId` `distance` `state`('used'|'new'|'damaged') `ownerType`('private'|'business')
-`courier` `categoryId` `sortBy` `pages`. Значения и доказательства — в `docs/olx-pl-search.md`.
+`courier` `categoryId` `sortBy` `pages`. Values and evidence are in `docs/olx-pl-search.md`.
 
-## Что здесь ломается
+## What breaks here
 
-| Ловушка | Как правильно |
+| Trap | The right way |
 |---|---|
-| Ссылка собрана из id или названия | Только поле `url` из выдачи. Слаг сервер игнорирует, адресует суффикс `ID<base36>`; выдуманный суффикс даёт `200` и открывает **чужое** объявление — проверено: подделанная ссылка на PS5 привела к `majtki-dla-dziewczynki` |
-| Имя параметра угадано | API отвечает `200 OK` на неизвестные параметры и **молча их игнорирует**. Любой параметр вне списка выше — проверить счётчиком до и после |
-| Город резолвится заново каждый раз | Сначала `scripts/olx-cache.py city <имя>`. В API идти только на `exit 3`, результат сразу дописывать `city-add` — иначе следующий поиск снова платит за тот же запрос |
-| Поиск сделан и забыт | После ответа — `scripts/olx-cache.py log --params ... --total ...`. Без этого «как в прошлый раз» придётся собирать заново |
-| В `city-add` вписан id «по памяти» | Только значение, которое вернул `olx-city.js` в этой же сессии. Сторож ловит лишь расхождение с уже закэшированным, выдуманный id для нового города он пропустит |
-| Взят `data[0]` из резолва города | На `krakow` настоящий Kraków идёт четвёртым, после деревень Krakowiany (с диакритикой — первым). Выбирать по точному имени, при неоднозначности спросить |
-| Ждём строгий порядок при `sortBy` | Промо пришпилены наверх и игнорируют сортировку (фильтры — соблюдают). Есть флаг `promoted`; строгий порядок — сортировать локально |
-| Просим больше 50 за раз | `limit` жёстко 50, `limit=100` → `400`. Больше — через `pages` |
-| «Соберём всю выдачу» | Потолок 1000, `offset=5000` → `400`. При `capped:true` — не обещать полноту, а предлагать сузить фильтры |
-| `created_at:desc` = только свежее | OLX поднимает старые объявления. Показывать обе даты: создания и поднятия |
+| Link assembled from an id or a title | Only the `url` field from the results. The server ignores the slug and addresses by the `ID<base36>` suffix; an invented suffix returns `200` and opens **someone else's** listing — verified: a forged PS5 link led to `majtki-dla-dziewczynki` |
+| Parameter name guessed | The API answers `200 OK` to unknown parameters and **silently ignores them**. Check any parameter outside the list above with the counter, before and after |
+| City resolved from scratch every time | `scripts/olx-cache.py city <name>` first. Go to the API only on `exit 3`, and write the result back with `city-add` right away — otherwise the next search pays for the same query again |
+| Search done and forgotten | After answering — `scripts/olx-cache.py log --params ... --total ...`. Without it, "same as last time" has to be rebuilt from nothing |
+| An id entered into `city-add` "from memory" | Only the value `olx-city.js` returned in this same session. The guard catches only a mismatch with an already cached id; an invented id for a new city goes right through |
+| `data[0]` taken from the city resolve | For `krakow` the real Kraków comes back fourth, after the villages of Krakowiany (with diacritics it comes first). Pick by exact name; when ambiguous, ask |
+| Expecting a strict order from `sortBy` | Promoted listings are pinned to the top and ignore sorting (they do respect filters). There is a `promoted` flag; for a strict order, sort locally |
+| Asking for more than 50 at a time | `limit` is hard-capped at 50, `limit=100` → `400`. For more, use `pages` |
+| "Let's collect all the results" | The ceiling is 1000, `offset=5000` → `400`. On `capped:true`, do not promise completeness — offer narrower filters |
+| `created_at:desc` = only fresh listings | OLX bumps old listings. Show both dates: created and bumped |
 
-## Красные флаги
+## Red flags
 
-- «Параметр наверняка называется `delivery`» — проверено, игнорируется; правильный `courier`.
-- «Тут быстрее через `curl`» — 403 от CloudFront даже с User-Agent.
-- Счётчик показал тысячи, а я всё равно вываливаю список — сначала предложить сужение.
-- «Ссылку соберу из id, там же виден шаблон» — 404 не будет, будет чужой товар в таблице.
-- «Szczecin я же резолвил в прошлый раз» — прошлая сессия ничего не помнит, помнит `docs/olx-pl-cities.json`.
+- "The parameter is surely called `delivery`" — checked, it is ignored; the right one is `courier`.
+- "This is faster with `curl`" — 403 from CloudFront even with a User-Agent.
+- The counter showed thousands and I am dumping the list anyway — offer a narrowing first.
+- "I'll assemble the link from the id, the pattern is right there" — you will not get a 404, you will get someone
+  else's item in your table.
+- "I resolved Szczecin last time" — the previous session remembers nothing, `docs/olx-pl-cities.json` does.
