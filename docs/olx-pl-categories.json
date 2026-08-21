@@ -1,0 +1,1383 @@
+{
+  "source": "https://www.olx.pl/sitemap/ + /api/v1/friendly-links/query-params/{slug}/ + category page HTML",
+  "harvested": "2026-08-21",
+  "categories": [
+    {
+      "id": 4042,
+      "slug": "antyki-i-kolekcje",
+      "name": "Antyki i Kolekcje",
+      "children": [
+        {
+          "id": 4043,
+          "slug": "antyki",
+          "name": "Antyki"
+        },
+        {
+          "id": 4044,
+          "slug": "kolekcje",
+          "name": "Kolekcje"
+        },
+        {
+          "id": 4046,
+          "slug": "rekodzielo",
+          "name": "Rękodzieło"
+        },
+        {
+          "id": 4045,
+          "slug": "sztuka",
+          "name": "Sztuka"
+        }
+      ]
+    },
+    {
+      "id": 5216,
+      "slug": "budowa-i-remont",
+      "name": "Budowa i Remont",
+      "children": [
+        {
+          "id": 5217,
+          "slug": "bramy-garazowe",
+          "name": "Bramy garażowe"
+        },
+        {
+          "id": 5222,
+          "slug": "bramy-i-ogrodzenia",
+          "name": "Bramy i ogrodzenia"
+        },
+        {
+          "id": 5232,
+          "slug": "dachy",
+          "name": "Dachy"
+        },
+        {
+          "id": 5238,
+          "slug": "drewno",
+          "name": "Drewno"
+        },
+        {
+          "id": 5246,
+          "slug": "drzwi",
+          "name": "Drzwi"
+        },
+        {
+          "id": 5254,
+          "slug": "elektryka",
+          "name": "Elektryka"
+        },
+        {
+          "id": 5261,
+          "slug": "fotowoltaika",
+          "name": "Fotowoltaika"
+        },
+        {
+          "id": 5267,
+          "slug": "garaze",
+          "name": "Garaże"
+        },
+        {
+          "id": 5269,
+          "slug": "hydraulika",
+          "name": "Hydraulika"
+        },
+        {
+          "id": 5279,
+          "slug": "klimatyzacja-i-wentylacja",
+          "name": "Klimatyzacja i wentylacja"
+        },
+        {
+          "id": 5287,
+          "slug": "kuchnia",
+          "name": "Kuchnia"
+        },
+        {
+          "id": 5310,
+          "slug": "maszyny-budowlane",
+          "name": "Maszyny budowlane"
+        },
+        {
+          "id": 5324,
+          "slug": "materialy-sypkie",
+          "name": "Materiały sypkie"
+        },
+        {
+          "id": 5494,
+          "slug": "nagrobki-i-akcesoria",
+          "name": "Nagrobki i akcesoria"
+        },
+        {
+          "id": 5330,
+          "slug": "narzedzia-budowlane",
+          "name": "Narzędzia budowlane"
+        },
+        {
+          "id": 5339,
+          "slug": "oczyszczalnie-i-szamba",
+          "name": "Oczyszczalnie i szamba"
+        },
+        {
+          "id": 5347,
+          "slug": "okna",
+          "name": "Okna"
+        },
+        {
+          "id": 5357,
+          "slug": "podlogi",
+          "name": "Podłogi"
+        },
+        {
+          "id": 5377,
+          "slug": "pozostale",
+          "name": "Pozostałe"
+        },
+        {
+          "id": 5466,
+          "slug": "plyty-drogowe",
+          "name": "Płyty drogowe"
+        },
+        {
+          "id": 5364,
+          "slug": "rusztowania",
+          "name": "Rusztowania"
+        },
+        {
+          "id": 5365,
+          "slug": "schody",
+          "name": "Schody"
+        },
+        {
+          "id": 5376,
+          "slug": "stal-zbrojeniowa",
+          "name": "Stal zbrojeniowa"
+        },
+        {
+          "id": 5372,
+          "slug": "stemple-i-szalunki",
+          "name": "Stemple i szalunki"
+        },
+        {
+          "id": 5375,
+          "slug": "systemy-kominowe",
+          "name": "Systemy kominowe"
+        },
+        {
+          "id": 5293,
+          "slug": "lazienka",
+          "name": "Łazienka"
+        },
+        {
+          "id": 5378,
+          "slug": "sciany-i-elewacje",
+          "name": "Ściany i elewacje"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "slug": "dla-dzieci",
+      "name": "Dla Dzieci",
+      "children": [
+        {
+          "id": 1602,
+          "slug": "akcesoria-dla-niemowlat",
+          "name": "Akcesoria dla niemowląt"
+        },
+        {
+          "id": 4600,
+          "slug": "artykuly-szkolne",
+          "name": "Artykuły szkolne"
+        },
+        {
+          "id": 734,
+          "slug": "buciki",
+          "name": "Buciki"
+        },
+        {
+          "id": 517,
+          "slug": "foteliki-nosidelka",
+          "name": "Foteliki - Nosidełka"
+        },
+        {
+          "id": 2380,
+          "slug": "odziez-niemowleca",
+          "name": "Odzież niemowlęca"
+        },
+        {
+          "id": 235,
+          "slug": "pozostale-dla-dzieci",
+          "name": "Pozostałe"
+        },
+        {
+          "id": 2379,
+          "slug": "ubranka-dla-chlopcow",
+          "name": "Ubranka dla chłopców"
+        },
+        {
+          "id": 2377,
+          "slug": "ubranka-dla-dziewczynek",
+          "name": "Ubranka dla dziewczynek"
+        },
+        {
+          "id": 516,
+          "slug": "wozki-dzieciece",
+          "name": "Wózki dziecięce"
+        },
+        {
+          "id": 231,
+          "slug": "zabawki",
+          "name": "Zabawki"
+        }
+      ]
+    },
+    {
+      "id": 628,
+      "slug": "dom-ogrod",
+      "name": "Dom i Ogród",
+      "children": [
+        {
+          "id": 565,
+          "slug": "meble",
+          "name": "Meble"
+        },
+        {
+          "id": 1193,
+          "slug": "narzedzia",
+          "name": "Narzędzia"
+        },
+        {
+          "id": 279,
+          "slug": "ogrzewanie",
+          "name": "Ogrzewanie"
+        },
+        {
+          "id": 584,
+          "slug": "ogrod",
+          "name": "Ogród"
+        },
+        {
+          "id": 3844,
+          "slug": "oswietlenie",
+          "name": "Oświetlenie"
+        },
+        {
+          "id": 293,
+          "slug": "pozostale-dom-ogrod",
+          "name": "Pozostałe"
+        },
+        {
+          "id": 4354,
+          "slug": "supermarket",
+          "name": "Supermarket"
+        },
+        {
+          "id": 1409,
+          "slug": "wyposazenie-wnetrz",
+          "name": "Wyposażenie wnętrz"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "slug": "elektronika",
+      "name": "Elektronika",
+      "children": [
+        {
+          "id": 727,
+          "slug": "fotografia",
+          "name": "Fotografia"
+        },
+        {
+          "id": 93,
+          "slug": "gry-konsole",
+          "name": "Gry i Konsole"
+        },
+        {
+          "id": 443,
+          "slug": "komputery",
+          "name": "Komputery"
+        },
+        {
+          "id": 451,
+          "slug": "pozostala-elektronika",
+          "name": "Pozostałe"
+        },
+        {
+          "id": 1856,
+          "slug": "smartwatche-i-opaski",
+          "name": "Smartwatche i opaski"
+        },
+        {
+          "id": 1979,
+          "slug": "sprzet-video",
+          "name": "Sprzęt  video"
+        },
+        {
+          "id": 1776,
+          "slug": "sprzet-agd",
+          "name": "Sprzęt AGD"
+        },
+        {
+          "id": 1951,
+          "slug": "sprzet-audio",
+          "name": "Sprzęt audio"
+        },
+        {
+          "id": 1848,
+          "slug": "tv",
+          "name": "TV"
+        },
+        {
+          "id": 1838,
+          "slug": "telefony",
+          "name": "Telefony"
+        }
+      ]
+    },
+    {
+      "id": 4269,
+      "slug": "dla-firm",
+      "name": "Firma i Przemysł",
+      "children": [
+        {
+          "id": 4654,
+          "slug": "biuro",
+          "name": "Biuro"
+        },
+        {
+          "id": 4767,
+          "slug": "czesci-do-maszyn-i-urzadzen",
+          "name": "Części do maszyn i urządzeń"
+        },
+        {
+          "id": 5035,
+          "slug": "gastronomia",
+          "name": "Gastronomia"
+        },
+        {
+          "id": 4736,
+          "slug": "kontenery",
+          "name": "Kontenery"
+        },
+        {
+          "id": 4662,
+          "slug": "maszyny-i-urzadzenia",
+          "name": "Maszyny i urządzenia"
+        },
+        {
+          "id": 4273,
+          "slug": "odziez-robocza",
+          "name": "Odzież robocza"
+        },
+        {
+          "id": 4275,
+          "slug": "pozostale",
+          "name": "Pozostałe"
+        },
+        {
+          "id": 4668,
+          "slug": "sklepy-i-magazyny",
+          "name": "Sklepy i magazyny"
+        },
+        {
+          "id": 4274,
+          "slug": "sprzedam-firme",
+          "name": "Sprzedam firmę"
+        },
+        {
+          "id": 5195,
+          "slug": "sprzedaz-hurtowa",
+          "name": "Sprzedaż hurtowa"
+        },
+        {
+          "id": 5079,
+          "slug": "wyposazenie-salonow",
+          "name": "Wyposażenie salonów"
+        },
+        {
+          "id": 5164,
+          "slug": "wyposazenie-warsztatow",
+          "name": "Wyposażenie warsztatów"
+        },
+        {
+          "id": 5564,
+          "slug": "zbiorniki-przemyslowe",
+          "name": "Zbiorniki przemysłowe"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "slug": "moda",
+      "name": "Moda",
+      "children": [
+        {
+          "id": 2717,
+          "slug": "akcesoria",
+          "name": "Akcesoria"
+        },
+        {
+          "id": 2662,
+          "slug": "bielizna-damska",
+          "name": "Bielizna damska"
+        },
+        {
+          "id": 2663,
+          "slug": "bielizna-meska",
+          "name": "Bielizna męska"
+        },
+        {
+          "id": 401,
+          "slug": "bizuteria",
+          "name": "Biżuteria"
+        },
+        {
+          "id": 2679,
+          "slug": "buty-damskie",
+          "name": "Buty damskie"
+        },
+        {
+          "id": 2680,
+          "slug": "buty-meskie",
+          "name": "Buty męskie"
+        },
+        {
+          "id": 2740,
+          "slug": "czapki-i-kapelusze",
+          "name": "Czapki i kapelusze"
+        },
+        {
+          "id": 2847,
+          "slug": "do-slubu",
+          "name": "Do ślubu"
+        },
+        {
+          "id": 1319,
+          "slug": "odziez-ciazowa",
+          "name": "Odzież ciążowa"
+        },
+        {
+          "id": 405,
+          "slug": "pozostala-moda",
+          "name": "Pozostałe"
+        },
+        {
+          "id": 2749,
+          "slug": "torby-i-torebki",
+          "name": "Torby i torebki"
+        },
+        {
+          "id": 2526,
+          "slug": "ubrania-damskie",
+          "name": "Ubrania damskie"
+        },
+        {
+          "id": 2528,
+          "slug": "ubrania-meskie",
+          "name": "Ubrania męskie"
+        },
+        {
+          "id": 626,
+          "slug": "zegarki",
+          "name": "Zegarki"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "motoryzacja",
+      "name": "Motoryzacja",
+      "children": [
+        {
+          "id": 3560,
+          "slug": "budowlane",
+          "name": "Budowlane"
+        },
+        {
+          "id": 3559,
+          "slug": "ciezarowe",
+          "name": "Ciężarowe"
+        },
+        {
+          "id": 1335,
+          "slug": "czesci-motocyklowe",
+          "name": "Części motocyklowe"
+        },
+        {
+          "id": 82,
+          "slug": "czesci-samochodowe",
+          "name": "Części samochodowe"
+        },
+        {
+          "id": 3558,
+          "slug": "dostawcze",
+          "name": "Dostawcze"
+        },
+        {
+          "id": 81,
+          "slug": "motocykle-skutery",
+          "name": "Motocykle i Skutery"
+        },
+        {
+          "id": 658,
+          "slug": "opony-felgi",
+          "name": "Opony i Felgi"
+        },
+        {
+          "id": 80,
+          "slug": "pozostala-motoryzacja",
+          "name": "Pozostała motoryzacja"
+        },
+        {
+          "id": 3561,
+          "slug": "przyczepy-i-naczepy",
+          "name": "Przyczepy i Naczepy"
+        },
+        {
+          "id": 84,
+          "slug": "samochody",
+          "name": "Samochody osobowe"
+        },
+        {
+          "id": 1461,
+          "slug": "car-audio",
+          "name": "Sprzęt car audio"
+        },
+        {
+          "id": 4482,
+          "slug": "car-equipment-and-accessories",
+          "name": "Wyposażenie i akcesoria samochodowe"
+        }
+      ]
+    },
+    {
+      "id": 751,
+      "slug": "muzyka-edukacja",
+      "name": "Muzyka i Edukacja",
+      "children": [
+        {
+          "id": 1173,
+          "slug": "filmy",
+          "name": "Filmy"
+        },
+        {
+          "id": 714,
+          "slug": "instrumenty",
+          "name": "Instrumenty"
+        },
+        {
+          "id": 453,
+          "slug": "ksiazki",
+          "name": "Książki"
+        },
+        {
+          "id": 1530,
+          "slug": "materialy-jezykowe",
+          "name": "Materiały językowe"
+        },
+        {
+          "id": 715,
+          "slug": "muzyka",
+          "name": "Muzyka"
+        },
+        {
+          "id": 755,
+          "slug": "pozostala-muzyka-edukacja",
+          "name": "Pozostała muzyka i edukacja"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "nieruchomosci",
+      "name": "Nieruchomości",
+      "children": [
+        {
+          "id": 710,
+          "slug": "biura-lokale",
+          "name": "Biura i Lokale"
+        },
+        {
+          "id": 1309,
+          "slug": "domy",
+          "name": "Domy"
+        },
+        {
+          "id": 709,
+          "slug": "dzialki",
+          "name": "Działki"
+        },
+        {
+          "id": 124,
+          "slug": "garaze-parkingi",
+          "name": "Garaże i Parkingi"
+        },
+        {
+          "id": 1321,
+          "slug": "hale-magazyny",
+          "name": "Hale i Magazyny"
+        },
+        {
+          "id": 1307,
+          "slug": "mieszkania",
+          "name": "Mieszkania"
+        },
+        {
+          "id": 4514,
+          "slug": "nieruchomosci-za-granica",
+          "name": "Nieruchomości za granicą"
+        },
+        {
+          "id": 32,
+          "slug": "pozostale-nieruchomosci",
+          "name": "Pozostałe nieruchomości"
+        },
+        {
+          "id": 11,
+          "slug": "stancje-pokoje",
+          "name": "Stancje i Pokoje"
+        }
+      ]
+    },
+    {
+      "id": 1816,
+      "slug": "noclegi",
+      "name": "Noclegi",
+      "children": [
+        {
+          "id": 4636,
+          "slug": "kwatery-pracownicze",
+          "name": "Kwatery Pracownicze"
+        },
+        {
+          "id": 4513,
+          "slug": "noclegi-polska",
+          "name": "Noclegi Polska"
+        },
+        {
+          "id": 4512,
+          "slug": "noclegi-za-granica",
+          "name": "Noclegi za granicą"
+        }
+      ]
+    },
+    {
+      "id": 1151,
+      "slug": "oddam-za-darmo",
+      "name": "Oddam za darmo",
+      "children": []
+    },
+    {
+      "id": 4,
+      "slug": "praca",
+      "name": "Praca",
+      "children": [
+        {
+          "id": 1421,
+          "slug": "administracja-biurowa",
+          "name": "Administracja biurowa"
+        },
+        {
+          "id": 4956,
+          "slug": "bhp-ochrona-srodowiska",
+          "name": "BHP i ochrona środowiska"
+        },
+        {
+          "id": 4222,
+          "slug": "badania-rozwoj",
+          "name": "Badania i rozwój"
+        },
+        {
+          "id": 4959,
+          "slug": "bankowosc",
+          "name": "Bankowość"
+        },
+        {
+          "id": 1443,
+          "slug": "budowa-remonty",
+          "name": "Budowa / remonty"
+        },
+        {
+          "id": 2446,
+          "slug": "dostawca-kurier-miejski",
+          "name": "Dostawca, kurier miejski"
+        },
+        {
+          "id": 1710,
+          "slug": "e-commerce-handel-internetowy",
+          "name": "E-commerce (handel internetowy)"
+        },
+        {
+          "id": 53,
+          "slug": "edukacja",
+          "name": "Edukacja"
+        },
+        {
+          "id": 3899,
+          "slug": "energetyka",
+          "name": "Energetyka"
+        },
+        {
+          "id": 1423,
+          "slug": "finanse-ksiegowosc",
+          "name": "Finanse / księgowość"
+        },
+        {
+          "id": 1529,
+          "slug": "franczyza-wlasna-firma",
+          "name": "Franczyza / Własna firma"
+        },
+        {
+          "id": 1860,
+          "slug": "fryzjerstwo-kosmetyka",
+          "name": "Fryzjerstwo, kosmetyka"
+        },
+        {
+          "id": 1437,
+          "slug": "gastronomia",
+          "name": "Gastronomia"
+        },
+        {
+          "id": 1425,
+          "slug": "hr",
+          "name": "HR"
+        },
+        {
+          "id": 2451,
+          "slug": "hostessa-roznoszenie-ulotek",
+          "name": "Hostessa, roznoszenie ulotek"
+        },
+        {
+          "id": 1439,
+          "slug": "hotelarstwo",
+          "name": "Hotelarstwo"
+        },
+        {
+          "id": 56,
+          "slug": "informatyka",
+          "name": "IT / telekomunikacja"
+        },
+        {
+          "id": 4223,
+          "slug": "inzynieria",
+          "name": "Inżynieria"
+        },
+        {
+          "id": 1538,
+          "slug": "kadra-kierownicza",
+          "name": "Kadra kierownicza"
+        },
+        {
+          "id": 2445,
+          "slug": "kierowca",
+          "name": "Kierowca"
+        },
+        {
+          "id": 2447,
+          "slug": "logistyka-zakupy-spedycja",
+          "name": "Logistyka, zakupy, spedycja"
+        },
+        {
+          "id": 2519,
+          "slug": "marketing-pr",
+          "name": "Marketing i PR"
+        },
+        {
+          "id": 2516,
+          "slug": "mechanika-lakiernictwo",
+          "name": "Mechanika i lakiernictwo"
+        },
+        {
+          "id": 2450,
+          "slug": "montaz-serwis",
+          "name": "Montaż i serwis"
+        },
+        {
+          "id": 5421,
+          "slug": "nieruchomosci",
+          "name": "Nieruchomości"
+        },
+        {
+          "id": 2508,
+          "slug": "obsluga-klienta-call-center",
+          "name": "Obsługa klienta i call center"
+        },
+        {
+          "id": 1213,
+          "slug": "ochrona",
+          "name": "Ochrona"
+        },
+        {
+          "id": 1861,
+          "slug": "opieka",
+          "name": "Opieka"
+        },
+        {
+          "id": 4957,
+          "slug": "organizacja-obsluga-impres",
+          "name": "Organizacja i obsługa imprez"
+        },
+        {
+          "id": 65,
+          "slug": "inne-oferty-pracy",
+          "name": "Pozostałe oferty pracy"
+        },
+        {
+          "id": 4651,
+          "slug": "praca-dodatkowa",
+          "name": "Praca dodatkowa"
+        },
+        {
+          "id": 5268,
+          "slug": "praca-od-zaraz",
+          "name": "Praca od zaraz"
+        },
+        {
+          "id": 4650,
+          "slug": "praca-sezonowa",
+          "name": "Praca sezonowa"
+        },
+        {
+          "id": 1481,
+          "slug": "praca-za-granica",
+          "name": "Praca za granicą"
+        },
+        {
+          "id": 1797,
+          "slug": "prace-magazynowe",
+          "name": "Prace magazynowe"
+        },
+        {
+          "id": 3902,
+          "slug": "pracownik-sklepu",
+          "name": "Pracownik sklepu"
+        },
+        {
+          "id": 1453,
+          "slug": "praktyki-staze",
+          "name": "Praktyki / staże"
+        },
+        {
+          "id": 5422,
+          "slug": "prawo",
+          "name": "Prawo"
+        },
+        {
+          "id": 1447,
+          "slug": "produkcja",
+          "name": "Produkcja"
+        },
+        {
+          "id": 1712,
+          "slug": "rolnictwo-i-ogrodnictwo",
+          "name": "Rolnictwo i ogrodnictwo"
+        },
+        {
+          "id": 2507,
+          "slug": "sprzedaz",
+          "name": "Sprzedaż"
+        },
+        {
+          "id": 1449,
+          "slug": "sprzatanie",
+          "name": "Sprzątanie"
+        },
+        {
+          "id": 4958,
+          "slug": "sluzby-mundurowe",
+          "name": "Służby mundurowe"
+        },
+        {
+          "id": 4960,
+          "slug": "ubezpieczenia",
+          "name": "Ubezpieczenia"
+        },
+        {
+          "id": 2449,
+          "slug": "wykladanie-ekspozycja-towaru",
+          "name": "Wykładanie i ekspozycja towaru"
+        },
+        {
+          "id": 4735,
+          "slug": "zapraszamy-seniorow",
+          "name": "Zapraszamy seniorów"
+        },
+        {
+          "id": 1862,
+          "slug": "zdrowie",
+          "name": "Zdrowie"
+        }
+      ]
+    },
+    {
+      "id": 757,
+      "slug": "rolnictwo",
+      "name": "Rolnictwo",
+      "children": [
+        {
+          "id": 4766,
+          "slug": "akcesoria",
+          "name": "Akcesoria"
+        },
+        {
+          "id": 1175,
+          "slug": "ciagniki",
+          "name": "Ciągniki"
+        },
+        {
+          "id": 1265,
+          "slug": "czesci-do-maszyn-rolniczych",
+          "name": "Części do maszyn rolniczych"
+        },
+        {
+          "id": 763,
+          "slug": "gielda-zwierzat",
+          "name": "Giełda zwierząt"
+        },
+        {
+          "id": 759,
+          "slug": "maszyny-rolnicze",
+          "name": "Maszyny rolnicze"
+        },
+        {
+          "id": 4368,
+          "slug": "nawozy",
+          "name": "Nawozy"
+        },
+        {
+          "id": 1267,
+          "slug": "opony-rolnicze",
+          "name": "Opony rolnicze"
+        },
+        {
+          "id": 765,
+          "slug": "pozostale-rolnicze",
+          "name": "Pozostałe"
+        },
+        {
+          "id": 761,
+          "slug": "produkty-rolne",
+          "name": "Produkty rolne"
+        },
+        {
+          "id": 1177,
+          "slug": "przyczepy",
+          "name": "Przyczepy"
+        },
+        {
+          "id": 1303,
+          "slug": "ryneczek",
+          "name": "Ryneczek"
+        },
+        {
+          "id": 4369,
+          "slug": "worki",
+          "name": "Worki"
+        },
+        {
+          "id": 4370,
+          "slug": "zbiorniki",
+          "name": "Zbiorniki rolnicze"
+        },
+        {
+          "id": 4511,
+          "slug": "srodki-ochrony-roslin",
+          "name": "Środki ochrony roślin"
+        },
+        {
+          "id": 4734,
+          "slug": "zywnosc-i-suplementacja-zwierzat",
+          "name": "Żywność i suplementacja zwierząt"
+        }
+      ]
+    },
+    {
+      "id": 767,
+      "slug": "sport-hobby",
+      "name": "Sport i Hobby",
+      "children": [
+        {
+          "id": 1527,
+          "slug": "bilety",
+          "name": "Bilety"
+        },
+        {
+          "id": 771,
+          "slug": "fitness",
+          "name": "Fitness"
+        },
+        {
+          "id": 1812,
+          "slug": "gry-planszowe",
+          "name": "Gry planszowe"
+        },
+        {
+          "id": 5504,
+          "slug": "hobby-kreatywne",
+          "name": "Hobby kreatywne"
+        },
+        {
+          "id": 1540,
+          "slug": "akcesoria-jezdzieckie",
+          "name": "Jeździectwo"
+        },
+        {
+          "id": 1601,
+          "slug": "militaria",
+          "name": "Militaria"
+        },
+        {
+          "id": 4309,
+          "slug": "pojazdy-elektryczne",
+          "name": "Pojazdy elektryczne"
+        },
+        {
+          "id": 100,
+          "slug": "pozostaly-sport-hobby",
+          "name": "Pozostałe"
+        },
+        {
+          "id": 461,
+          "slug": "rowery",
+          "name": "Rowery"
+        },
+        {
+          "id": 1670,
+          "slug": "skating",
+          "name": "Skating"
+        },
+        {
+          "id": 4970,
+          "slug": "sporty-druzynowe",
+          "name": "Sporty drużynowe"
+        },
+        {
+          "id": 5488,
+          "slug": "sporty-ekstremalne",
+          "name": "Sporty ekstremalne"
+        },
+        {
+          "id": 4963,
+          "slug": "sporty-towarzyskie",
+          "name": "Sporty towarzyskie"
+        },
+        {
+          "id": 5481,
+          "slug": "sporty-walki",
+          "name": "Sporty walki"
+        },
+        {
+          "id": 1517,
+          "slug": "sporty-wodne",
+          "name": "Sporty wodne"
+        },
+        {
+          "id": 769,
+          "slug": "sporty-zimowe",
+          "name": "Sporty zimowe"
+        },
+        {
+          "id": 6,
+          "slug": "spolecznosc",
+          "name": "Społeczność"
+        },
+        {
+          "id": 465,
+          "slug": "turystyka",
+          "name": "Turystyka"
+        },
+        {
+          "id": 773,
+          "slug": "wedkarstwo",
+          "name": "Wędkarstwo"
+        }
+      ]
+    },
+    {
+      "id": 4371,
+      "slug": "uslugi",
+      "name": "Usługi",
+      "children": [
+        {
+          "id": 4382,
+          "slug": "korepetycje",
+          "name": "Korepetycje"
+        },
+        {
+          "id": 4383,
+          "slug": "kursy-warsztaty",
+          "name": "Kursy i warsztaty"
+        },
+        {
+          "id": 4373,
+          "slug": "obsluga-imprez",
+          "name": "Obsługa imprez"
+        },
+        {
+          "id": 4471,
+          "slug": "pozostale-uslugi",
+          "name": "Pozostałe usługi"
+        },
+        {
+          "id": 4389,
+          "slug": "serwis-agd-rtv",
+          "name": "Serwis i naprawa RTV, AGD, Elektronika"
+        },
+        {
+          "id": 4374,
+          "slug": "sprzatanie",
+          "name": "Sprzątanie"
+        },
+        {
+          "id": 4375,
+          "slug": "tlumaczenia",
+          "name": "Tłumaczenia"
+        },
+        {
+          "id": 4387,
+          "slug": "uroda-zdrowie",
+          "name": "Uroda i zdrowie"
+        },
+        {
+          "id": 4372,
+          "slug": "budowa-remont",
+          "name": "Usługi budowlane i remontowe"
+        },
+        {
+          "id": 4384,
+          "slug": "uslugi-dla-zwierzat",
+          "name": "Usługi dla zwierząt"
+        },
+        {
+          "id": 4376,
+          "slug": "uslugi-finansowe",
+          "name": "Usługi finansowe"
+        },
+        {
+          "id": 4377,
+          "slug": "uslugi-informatyczne",
+          "name": "Usługi informatyczne"
+        },
+        {
+          "id": 4388,
+          "slug": "uslugi-meblarskie",
+          "name": "Usługi meblarskie"
+        },
+        {
+          "id": 4378,
+          "slug": "uslugi-motoryzacyjne",
+          "name": "Usługi motoryzacyjne"
+        },
+        {
+          "id": 4379,
+          "slug": "uslugi-ogrodnicze",
+          "name": "Usługi ogrodnicze"
+        },
+        {
+          "id": 4380,
+          "slug": "uslugi-reklamowe",
+          "name": "Usługi reklamowe"
+        },
+        {
+          "id": 4381,
+          "slug": "uslugi-transportowe",
+          "name": "Usługi transportowe"
+        },
+        {
+          "id": 4386,
+          "slug": "uslugi-slubne",
+          "name": "Usługi ślubne"
+        },
+        {
+          "id": 4385,
+          "slug": "wspolpraca-biznesowa",
+          "name": "Współpraca biznesowa"
+        }
+      ]
+    },
+    {
+      "id": 3018,
+      "slug": "wypozyczalnia",
+      "name": "Wypożyczalnia",
+      "children": [
+        {
+          "id": 3021,
+          "slug": "imprezy-i-wydarzenia",
+          "name": "Imprezy i wydarzenia"
+        },
+        {
+          "id": 4515,
+          "slug": "czartery-jachty-i-lodzie",
+          "name": "Jachty, łodzie i sporty wodne"
+        },
+        {
+          "id": 3024,
+          "slug": "wypozyczalnia-pozostale",
+          "name": "Pozostałe Wypożyczalnia"
+        },
+        {
+          "id": 3023,
+          "slug": "samochody-i-pojazdy",
+          "name": "Samochody i pojazdy"
+        },
+        {
+          "id": 3489,
+          "slug": "sprzet-medyczny",
+          "name": "Sprzęt medyczny i rehabilitacyjny"
+        },
+        {
+          "id": 3492,
+          "slug": "urzadzenia-narzedzia",
+          "name": "Urządzenia, maszyny i narzędzia"
+        }
+      ]
+    },
+    {
+      "id": 3647,
+      "slug": "zdrowie-i-uroda",
+      "name": "Zdrowie i Uroda",
+      "children": [
+        {
+          "id": 3648,
+          "slug": "cialo",
+          "name": "Ciało"
+        },
+        {
+          "id": 3654,
+          "slug": "higiena-jamy-ustnej",
+          "name": "Higiena jamy ustnej"
+        },
+        {
+          "id": 3655,
+          "slug": "korekcja-wzroku",
+          "name": "Korekcja wzroku"
+        },
+        {
+          "id": 3652,
+          "slug": "makijaz",
+          "name": "Makijaż"
+        },
+        {
+          "id": 3650,
+          "slug": "paznokcie",
+          "name": "Paznokcie"
+        },
+        {
+          "id": 3653,
+          "slug": "perfumy",
+          "name": "Perfumy"
+        },
+        {
+          "id": 3663,
+          "slug": "pozostale",
+          "name": "Pozostałe"
+        },
+        {
+          "id": 3656,
+          "slug": "produkty-cbd",
+          "name": "Produkty CBD"
+        },
+        {
+          "id": 3657,
+          "slug": "sprzet-rehabilitacyjny-i-ortopedyczny",
+          "name": "Sprzęt rehabilitacyjny i ortopedyczny"
+        },
+        {
+          "id": 3659,
+          "slug": "transport-i-poruszanie",
+          "name": "Transport i poruszanie"
+        },
+        {
+          "id": 3649,
+          "slug": "twarz",
+          "name": "Twarz"
+        },
+        {
+          "id": 3660,
+          "slug": "urzadzenia-do-masazu",
+          "name": "Urządzenia do masażu"
+        },
+        {
+          "id": 3661,
+          "slug": "urzadzenia-medyczne",
+          "name": "Urządzenia medyczne"
+        },
+        {
+          "id": 4635,
+          "slug": "witaminy-i-suplementy-zdrowia",
+          "name": "Witaminy i suplementy zdrowia"
+        },
+        {
+          "id": 3651,
+          "slug": "wlosy",
+          "name": "Włosy"
+        },
+        {
+          "id": 3662,
+          "slug": "srodki-ochrony",
+          "name": "Środki ochrony"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "slug": "zwierzeta",
+      "name": "Zwierzęta",
+      "children": [
+        {
+          "id": 175,
+          "slug": "akcesoria-dla-zwierzat",
+          "name": "Akcesoria dla zwierząt"
+        },
+        {
+          "id": 1293,
+          "slug": "akwarystyka",
+          "name": "Akwarystyka"
+        },
+        {
+          "id": 1457,
+          "slug": "gryzonie",
+          "name": "Gryzonie i Króliki"
+        },
+        {
+          "id": 3881,
+          "slug": "karma-i-przysmaki",
+          "name": "Karma i przysmaki"
+        },
+        {
+          "id": 1459,
+          "slug": "konie",
+          "name": "Konie"
+        },
+        {
+          "id": 138,
+          "slug": "koty",
+          "name": "Koty"
+        },
+        {
+          "id": 140,
+          "slug": "pozostale-zwierzeta",
+          "name": "Pozostałe"
+        },
+        {
+          "id": 139,
+          "slug": "psy",
+          "name": "Psy"
+        },
+        {
+          "id": 1455,
+          "slug": "ptaki",
+          "name": "Ptaki"
+        },
+        {
+          "id": 4033,
+          "slug": "terrarystyka",
+          "name": "Terrarystyka"
+        },
+        {
+          "id": 180,
+          "slug": "zaginione-i-znalezione",
+          "name": "Zaginione i znalezione"
+        }
+      ]
+    }
+  ]
+}

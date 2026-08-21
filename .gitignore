@@ -1,0 +1,9 @@
+# артефакты прогонов playwright-cli (снапшоты, логи консоли)
+.playwright-cli/
+.playwright/
+
+# локальные настройки Claude Code
+.claude/settings.local.json
+
+node_modules/
+.DS_Store

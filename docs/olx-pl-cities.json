@@ -1,0 +1,236 @@
+{
+  "source": "https://www.olx.pl/api/v1/geo-encoder/location-autocomplete/ (docs/snippets/olx-city.js)",
+  "note": "Кэш резолвов «название → cityId». Первым делом смотреть сюда, вызывать olx-city.js только на промахе, попадание дописывать через scripts/olx-cache.py city-add. Проверено: с диакритикой (\"Kraków\") точный город идёт первым, без неё (\"krakow\") — четвёртым, после деревень Krakowiany.",
+  "harvested": "2026-08-21",
+  "cities": [
+    {
+      "name": "Białystok",
+      "cityId": 1079,
+      "region": "Podlaskie",
+      "regionId": 18,
+      "county": "Białystok",
+      "aliases": [
+        "białystok"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Bydgoszcz",
+      "cityId": 4019,
+      "region": "Kujawsko-pomorskie",
+      "regionId": 15,
+      "county": "Bydgoszcz",
+      "aliases": [
+        "bydgoszcz"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Częstochowa",
+      "cityId": 4765,
+      "region": "Śląskie",
+      "regionId": 6,
+      "county": "Częstochowa",
+      "aliases": [
+        "czestochowa"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Gdańsk",
+      "cityId": 5659,
+      "region": "Pomorskie",
+      "regionId": 5,
+      "county": "Gdańsk",
+      "aliases": [
+        "gdansk"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Gdynia",
+      "cityId": 5849,
+      "region": "Pomorskie",
+      "regionId": 5,
+      "county": "Gdynia",
+      "aliases": [
+        "gdynia"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Gryfino",
+      "cityId": 6681,
+      "region": "Zachodniopomorskie",
+      "regionId": 11,
+      "county": "gryfiński",
+      "aliases": [],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Katowice",
+      "cityId": 7691,
+      "region": "Śląskie",
+      "regionId": 6,
+      "county": "Katowice",
+      "aliases": [
+        "katowice"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Kielce",
+      "cityId": 7971,
+      "region": "Świętokrzyskie",
+      "regionId": 13,
+      "county": "Kielce",
+      "aliases": [
+        "kielce"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Kraków",
+      "cityId": 8959,
+      "region": "Małopolskie",
+      "regionId": 4,
+      "county": "Kraków",
+      "aliases": [
+        "krakow"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Lublin",
+      "cityId": 10119,
+      "region": "Lubelskie",
+      "regionId": 8,
+      "county": "Lublin",
+      "aliases": [
+        "lublin"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Olsztyn",
+      "cityId": 12673,
+      "region": "Warmińsko-mazurskie",
+      "regionId": 14,
+      "county": "Olsztyn",
+      "aliases": [
+        "olsztyn"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Opole",
+      "cityId": 12885,
+      "region": "Opolskie",
+      "regionId": 12,
+      "county": "Opole",
+      "aliases": [
+        "opole"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Poznań",
+      "cityId": 13983,
+      "region": "Wielkopolskie",
+      "regionId": 1,
+      "county": "Poznań",
+      "aliases": [
+        "poznan"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Rzeszów",
+      "cityId": 15241,
+      "region": "Podkarpackie",
+      "regionId": 17,
+      "county": "Rzeszów",
+      "aliases": [
+        "rzeszow"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Sopot",
+      "cityId": 15983,
+      "region": "Pomorskie",
+      "regionId": 5,
+      "county": "Sopot",
+      "aliases": [
+        "sopot"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Szczecin",
+      "cityId": 16705,
+      "region": "Zachodniopomorskie",
+      "regionId": 11,
+      "county": "Szczecin",
+      "aliases": [
+        "szczecin"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Toruń",
+      "cityId": 38395,
+      "region": "Kujawsko-pomorskie",
+      "regionId": 15,
+      "county": "Toruń",
+      "aliases": [
+        "torun"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Warszawa",
+      "cityId": 17871,
+      "region": "Mazowieckie",
+      "regionId": 2,
+      "county": "Warszawa",
+      "aliases": [
+        "warszawa"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Wrocław",
+      "cityId": 19701,
+      "region": "Dolnośląskie",
+      "regionId": 3,
+      "county": "Wrocław",
+      "aliases": [
+        "wrocław"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Zielona Góra",
+      "cityId": 20787,
+      "region": "Lubuskie",
+      "regionId": 9,
+      "county": "Zielona Góra",
+      "aliases": [
+        "zielona gora"
+      ],
+      "resolved": "2026-08-21"
+    },
+    {
+      "name": "Łódź",
+      "cityId": 10609,
+      "region": "Łódzkie",
+      "regionId": 7,
+      "county": "Łódź",
+      "aliases": [
+        "łodz"
+      ],
+      "resolved": "2026-08-21"
+    }
+  ]
+}

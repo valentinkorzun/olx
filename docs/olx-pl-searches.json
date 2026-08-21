@@ -1,0 +1,30 @@
+{
+  "note": "История поисков пользователя: params — ровно то, что уходит в window.__P, поэтому запрос повторяется копипастой. Пишется через scripts/olx-cache.py log, новые сверху.",
+  "keep": 100,
+  "searches": [
+    {
+      "date": "2026-08-21",
+      "params": {
+        "query": "ps5 slim",
+        "categoryId": 93,
+        "priceFrom": 1200,
+        "priceTo": 2600,
+        "sortBy": "filter_float_price:asc",
+        "pages": 4
+      },
+      "total": 160,
+      "note": "PS5 Slim по всей Польше, 1200-2600 zł, категория Gry i Konsole"
+    },
+    {
+      "date": "2026-08-21",
+      "params": {
+        "query": "ps5 slim",
+        "cityId": 16705,
+        "distance": 15,
+        "pages": 3
+      },
+      "total": 16,
+      "note": "PS5 Slim, Szczecin +15 км — 7 реальных консолей, минимум 1990 zł"
+    }
+  ]
+}
